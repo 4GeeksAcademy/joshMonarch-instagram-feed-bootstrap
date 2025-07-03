@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Feed</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+      integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+      integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="d-flex flex-column px-1">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light justify-content-between align-items-center"
+      >
+        <a href="#" class="navbar-brand">
+          <i class="bi bi-instagram"></i>
+          <span class="fs-5">Instagram</span>
+        </a>
+        <div>
+          <ul class="navbar-nav flex-row justify-content-end">
+            <li class="nav-item">
+              <a
+                href="#"
+                class="btn btn-success me-2 py-2 text-white"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                >Create a new post</a
+              >
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        Create a new post
+                      </h5>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="">
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label"
+                            >Caption:</label
+                          >
+                          <textarea
+                            class="form-control mb-2"
+                            id="message-text"
+                            placeholder="Add the caption of your post here"
+                          ></textarea>
+                          <button class="btn btn-light me-1">
+                            <i class="bi bi-camera-fill"></i>
+                          </button>
+                          <button class="btn btn-light">
+                            <i class="bi bi-geo-alt-fill"></i>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close</button
+                      ><button class="btn btn-success">Publish</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="btn btn-secondary dropdown-toggle py-2 px-3"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-gear-fill text-white"></i>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end position-absolute"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <li><a href="#" class="dropdown-item">Profile</a></li>
+                  <li><a href="#" class="dropdown-item">Accesibility</a></li>
+                  <li>
+                    <a href="#" class="dropdown-item">Privacy and Data</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a href="#" class="dropdown-item text-danger">Log out</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="text-center py-3">
+        <a
+          class="link-dark"
+          href="#grid"
+          type="button"
+          data-bs-toggle="collapse"
+          aria-expanded="true"
+          aria-controls="grid"
+          ><i class="bi bi-grid-3x3 me-3"></i
+        ></a>
+        <a
+          class="link-dark"
+          href="#flex"
+          type="button"
+          data-bs-toggle="collapse"
+          aria-expanded="false"
+          aria-controls="flex"
+          ><i class="bi bi-square-fill"></i
+        ></a>
+      </div>
+      <div id="accordion">
+        <div
+          class="container-fluid collapse show"
+          id="grid"
+          data-bs-parent="#accordion"
+        >
+          <div class="row align-items-center">
+            <div class="col ratio ratio-1x1">
+              <img class="img-fluid p-1" src="./img/food-1.jpg" alt="photo" />
+            </div>
+            <div class="col ratio ratio-1x1">
+              <img class="img-fluid p-1" src="./img/food-2.jpg" alt="photo" />
+            </div>
+            <div class="col ratio ratio-1x1">
+              <img class="img-fluid p-1" src="./img/food-3.jpg" alt="photo" />
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col ratio ratio-1x1">
+              <img class="img-fluid p-1" src="./img/food-4.jpg" alt="photo" />
+            </div>
+            <div class="col ratio ratio-1x1">
+              <img class="img-fluid p-1" src="./img/food-5.jpg" alt="photo" />
+            </div>
+            <div class="col ratio ratio-1x1">
+              <img class="img-fluid p-1" src="./img/food-6.jpg" alt="photo" />
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col ratio ratio-1x1">
+              <img class="img-fluid p-1" src="./img/food-7.jpg" alt="photo" />
+            </div>
+            <div class="col ratio ratio-1x1">
+              <img class="img-fluid p-1" src="./img/food-8.jpg" alt="photo" />
+            </div>
+            <div class="col ratio ratio-1x1">
+              <img class="img-fluid p-1" src="./img/food-9.jpg" alt="photo" />
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="flex" data-bs-parent="#accordion">
+          <div class="d-flex flex-column align-items-center gap-5">
+            <div class="card">
+              <div
+                class="card-header d-flex justify-content-between align-items-center"
+              >
+                <h4 class="card-title">I have a guest today</h4>
+                <span class="float-end">01/04</span>
+              </div>
+              <div class="card-body p-0">
+                <img src="./img/food-1.jpg" alt="photo" class="img-fluid" />
+              </div>
+              <div class="card-footer">
+                <span><b>544 Likes</b></span>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam accusamus aliquid enim cupiditate, placeat repudiandae
+                  aspernatur at fugit magni tenetur.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="card-header d-flex justify-content-between align-items-center"
+              >
+                <h4 class="card-title">Sweet potatoes are superior</h4>
+                <span>02/10</span>
+              </div>
+              <div class="card-body p-0">
+                <img src="./img/food-2.jpg" alt="photo" class="img-fluid" />
+              </div>
+              <div class="card-footer">
+                <span><b>3333 Likes</b></span>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam accusamus aliquid enim cupiditate, placeat repudiandae
+                  aspernatur at fugit magni tenetur. Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Praesentium, aliquam?
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="card-header d-flex justify-content-between align-items-center"
+              >
+                <h4 class="card-title">Delicious weekend</h4>
+                <span class="float-end">02/11</span>
+              </div>
+              <div class="card-body p-0">
+                <img src="./img/food-3.jpg" alt="photo" class="img-fluid" />
+              </div>
+              <div class="card-footer">
+                <span><b>654 Likes</b></span>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam accusamus aliquid enim cupiditate.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="card-header d-flex justify-content-between align-items-center"
+              >
+                <h4 class="card-title">An italian surprise</h4>
+                <span class="float-end">02/14</span>
+              </div>
+              <div class="card-body p-0">
+                <img src="./img/food-4.jpg" alt="photo" class="img-fluid" />
+              </div>
+              <div class="card-footer">
+                <span><b>741 Likes</b></span>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam accusamus aliquid enim cupiditate, placeat repudiandae
+                  aspernatur at fugit magni tenetur. Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="card-header d-flex justify-content-between align-items-center"
+              >
+                <h4 class="card-title">Yummy breakfast</h4>
+                <span class="float-end">03/01</span>
+              </div>
+              <div class="card-body p-0">
+                <img src="./img/food-5.jpg" alt="photo" class="img-fluid" />
+              </div>
+              <div class="card-footer">
+                <span><b>456 Likes</b></span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="card-header d-flex justify-content-between align-items-center"
+              >
+                <h4 class="card-title">My fav burger</h4>
+                <span class="float-end">03/07</span>
+              </div>
+              <div class="card-body p-0">
+                <img src="./img/food-6.jpg" alt="photo" class="img-fluid" />
+              </div>
+              <div class="card-footer">
+                <span><b>1112 Likes</b></span>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam accusamus aliquid enim cupiditate, placeat repudiandae
+                  aspernatur at fugit magni tenetur. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Rerum, consequuntur!
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="card-header d-flex justify-content-between align-items-center"
+              >
+                <h4 class="card-title">American pancakes</h4>
+                <span class="float-end">03/20</span>
+              </div>
+              <div class="card-body p-0">
+                <img src="./img/food-7.jpg" alt="photo" class="img-fluid" />
+              </div>
+              <div class="card-footer">
+                <span><b>522 Likes</b></span>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam accusamus aliquid enim cupiditate, placeat repudiandae
+                  aspernatur.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="card-header d-flex justify-content-between align-items-center"
+              >
+                <h4 class="card-title">A salad</h4>
+                <span class="float-end">03/22</span>
+              </div>
+              <div class="card-body p-0">
+                <img src="./img/food-8.jpg" alt="photo" class="img-fluid" />
+              </div>
+              <div class="card-footer">
+                <span><b>123 Likes</b></span>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam accusamus aliquid enim cupiditate, Lorem ipsum dolor sit
+                  amet.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="card-header d-flex justify-content-between align-items-center"
+              >
+                <h4 class="card-title">The best salmon</h4>
+                <span class="float-end">03/30</span>
+              </div>
+              <div class="card-body p-0">
+                <img src="./img/food-9.jpg" alt="photo" class="img-fluid" />
+              </div>
+              <div class="card-footer">
+                <span><b>300 Likes</b></span>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam accusamus aliquid enim cupiditate, placeat repudiandae
+                  aspernatur at fugit magni tenetur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
